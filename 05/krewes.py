@@ -1,3 +1,8 @@
+# Ari Schechter and Anya Zorin
+# Soft Dev
+# K05 -- Teamwork but better this time: pick a random name from KREWES
+# 2020-09-30
+
 import random
 
 KREWES = {
