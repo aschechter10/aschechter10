@@ -1,0 +1,16 @@
+Team ahhhhhhhhh
+Soft Dev
+K08 - Cross Pollination and Virtual Insanity: compile questions concerns and comments into a text file 
+2020-10-04
+
+
+
+What does continue do?
+
+What is this syntax:
+	print(...), x=(...)
+
+What is rsplit()
+
+What is this syntax:
+	x = [float(x) for x in list]
