@@ -1,0 +1,15 @@
+Team ahhhhhhhhh 1
+Soft Dev
+K08 - Cross Pollination and Virtual Insanity: investigate $ -m venv ~/myherozero
+2020-10-05
+
+- the venv module is used to create "virtual environments"
+- virtual environments contain a python installation for a particular version of Python and additional packages
+- these virtual environments have their own directories that can be differentiated with those of the system
+- the ~/myherozero creates a directory where the virtual environment is in this case
+- running the command will create a target directory if a parent directory does not exist and places a
+  pyvenv.cfg file in it
+- virtual enivronments need to be activated after creation
+Sources:
+https://docs.python.org/3/library/venv.html
+https://docs.python.org/3/tutorial/venv.html
