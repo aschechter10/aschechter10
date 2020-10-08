@@ -14,3 +14,9 @@ Q3a: We believe it will print the name of the file (app.py)
 Q3b: We don't think it will appear anywhere. Returning a value for a function doesn't usually print it unless you call the function with a print().
 
 Q4: In java, the dot operator was used to call functions in other files/libraries. In this case, app.run() might be calling the run() function in a different file called app
+
+
+
+Notes after running:
+* "No hablo queso!" is printed in the body of the html file. Not printed in terminal
+* __main__ is printed in the terminal. Clearly has something to do with how we call the main function in python. Assuming __name__ is always __main__ in a python file
