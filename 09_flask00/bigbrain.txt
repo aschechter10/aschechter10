@@ -1,0 +1,16 @@
+Team ahhhhhhhhh 1
+Soft Dev
+K0p - Simple Path to Greatness: answer questions from a python file
+2020-10-08
+
+Q0: In java, we used a the same syntax to call a function and pass an argument. Here it's calling Flask and passing argument __name__
+
+Q1: We have only seen backslash for navigating into directories/specifying a path
+
+Q2: We believe this will print to the terminal. Although it's possible it could print to the web page itself (that's just an educated guess as we know that Flask is a web framework).
+
+Q3a: We believe it will print the name of the file (app.py)
+
+Q3b: We don't think it will appear anywhere. Returning a value for a function doesn't usually print it unless you call the function with a print().
+
+Q4: In java, the dot operator was used to call functions in other files/libraries. In this case, app.run() might be calling the run() function in a different file called app
