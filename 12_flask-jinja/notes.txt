@@ -1,0 +1,19 @@
+Initial notes:
+* Now importing render_template as well as Flask
+* In model_tmplt.html there is jinja code
+* 2 different app.route() statements
+
+Prediction:
+* If render_template is not imported, the page will not be rendered (Q0)
+* First webpage will open "no hablo queso" as usual
+* Adding "/my_foist_template" to the url will open the model_tmplt.html 
+  with some sort of jinja processing -> we think it will print the numbers in the coll list (Q1)
+* In the model_tmplt.html file, foo and collection represent variables. 
+  Those variables are assigned values in the return statement on line 16 of app.py (Q2)
+
+Results:
+* Removing render_template did stop the page from rendering
+* First webpage was the same as usual
+* When "/my_foist_template" was added, it did open the template and the numbers from coll were
+  printed with one number on each line. 
+* The values in the return line in app.py did in fact correspond with variables 
