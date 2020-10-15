@@ -8,6 +8,8 @@ from flask import Flask
 import csv
 import random
 
+app = Flask(__name__)  # create instance of class Flask
+
 dic = {}  # Initializes the dictionary for jobs and percentages
 
 with open('occupy_flask_st/occupations.csv', 'r') as csv_file:  # opens the file
@@ -23,8 +25,6 @@ with open('occupy_flask_st/occupations.csv', 'r') as csv_file:  # opens the file
         percentage = float(row['Percentage'])
         # adding the names and percentages to our dictionary
         dic[job_name] = percentage
-
-app = Flask(__name__)  # create instance of class Flask
 
 
 @app.route("/")  # assign fxn to route

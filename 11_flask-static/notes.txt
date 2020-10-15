@@ -1,0 +1,12 @@
+Initial notes:
+* Foo (not foo.html) seems to have no file type
+
+Prediction:
+* Still going to print no hablo queso
+* Navigating to foo.html through the link /static/foo.html will present the foo.html webpage
+* Not sure what was going to happen with foo (not html)
+
+Results:
+* Still printed no hablo queso
+* Navigating to foo.html did present the webpage
+* When Navigating to foo, it tries to download the foo file (still not sure of file type)
