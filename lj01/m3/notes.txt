@@ -4,8 +4,6 @@
 # 2020-10-29
 
 
-
-
 Lecture 1: Inserting New Documents - ObjectId()
 * Can add documents through UI (Insert Document button near the top of the page)
 * Every document must have its own unique id of type ObjectId() (one given by default) 
@@ -47,4 +45,5 @@ Lecture 6: Deleting Documents and Collections
 * Can use delete button in UI
 * deleteOne() deletes first document that fits query and deleteMany() deletes all 
 * Mostly use deleteOne() when querying by _id value to make sure deleting intended document and not missing anything
-* To delete a
+* To delete a collection, can use --drop with mongoimport or from the mongo shell with the drop() method
+* Be careful when deleting -- deleted information is lost forever!

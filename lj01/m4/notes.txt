@@ -1,0 +1,24 @@
+﻿Lecture 1: Query Operators - Comparison
+* Query operators let us find data in different ways
+* Ex: comparison operators ($eq for =, $neq for !=, $gt for >, $lte for <=, etc.)
+   * Used in the format { <field>: { <operator>: <value> } }
+* In mongo shell, use query operators with the find() method
+* Equals operator is implicit in certain cases
+   * { “usertype”: { “$eq”: “Customer: } } is the same as { “usertype”: “Customer” }
+   * Equals operator is used as the default operator when one isn’t specified
+
+
+Lecture 2: Query Operators - Logic
+* $and finds the documents that meet all the query clauses
+* $or finds documents that meet at least one of the query clauses
+* $nor find documents that don’t meet any of the clauses
+* $not negates the clauses
+
+
+* $and, $or, $nor use the syntax { <operator>: [{statement1}, {statement2}, … ]}
+* $not uses the syntax {$not: {statement}}
+
+
+* $and is used as default operator when one isn’t specified
+* Statements can just be separated by commas
+* Use explicit $and when using the same operator more than once in a query
