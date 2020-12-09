@@ -5,12 +5,13 @@
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
-@app.route("/") #, methods=['GET', 'POST'])
+
+@app.route("/")  # , methods=['GET', 'POST'])
 def disp_loginpage():
-   return render_template("login.html")
+    return render_template("login.html")
 
 
-@app.route("/auth", methods=['GET', 'POST'])
+@app.route("/auth")
 def authenticate():
     if request.method == "GET":
         username = request.args["username"]
@@ -18,6 +19,7 @@ def authenticate():
         username = request.form["username"]
     return render_template("response.html", user=username,
                            request=request.method)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
