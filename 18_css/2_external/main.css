@@ -1,0 +1,104 @@
+  /* setting background color and font */
+	html {
+		height: 100%;
+		background-color: #666666;
+		font-family: 'Roboto', sans-serif;
+	}
+  /* setting up flex box,
+     margins,
+     bacground color for body
+     text color
+   */
+	body {
+		flex-flow: row wrap;
+		display: flex;
+		margin: 25px;
+		background-color: #767676;
+		color: #000000;
+	}
+
+  /* styling the top header */
+	h1 {
+		order: 0;
+		text-align: center;
+		color: #ffffff;
+		background-color: #bebebe;
+		width: 100%;
+		margin-top: 0;
+	}
+
+  /* setting up postion for h3 and ul
+    we are using flex-box so order allows us
+    to postion elements from left to right
+    with 0 being the far left and higher numbers
+    being farther right on the page
+   */
+	h3 {
+		order: 1;
+		text-align: left;
+	}
+
+	h3,
+	ul {
+		width: calc(20% - 30px);
+		margin: 15px;
+	}
+  /* more styling using flex-box */
+	h2 {
+		order: 2;
+		width: 80%;
+	}
+
+  /* selects last br element, positions it
+     horizontally by pushing it down and the
+     text following it by 20px */
+	br:last-of-type {
+		content: "";
+		margin-top: 20px;
+		display: block;
+	}
+
+  /* psuedo-element that displays text 
+     positioned vertically, absolutely
+     with respect to the body element 
+     z-index of 999 makes the psuedo-element
+     cover the already existing copyright
+     text in the HTML */
+	br:last-of-type::after {
+		content: "Copyright © 2016 Clyde \"Thluffy\" Sinclair";
+		color: #737676;
+		text-align: right;
+		display: block;
+		position: absolute;
+		left: 25px;
+		right: 25px;
+		background: #565656;
+		z-index: 999;
+		font-size: 15px;
+		padding: 10px;
+	}
+
+  /* more styling and positioning of elements */
+	ul {
+		order: 3;
+		list-style-type: none;
+		float: left;
+		padding: 0;
+	}
+
+	ul a {
+		color: #d8dcdc;
+		text-decoration: none;
+	}
+
+	p {
+		order: 4;
+        width: 80%;
+	}
+
+  /* adjusting margins to match target */
+	h2,
+	h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
