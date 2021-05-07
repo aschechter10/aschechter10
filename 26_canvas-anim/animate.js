@@ -17,7 +17,7 @@ var stopButton = document.getElementById("buttonStop"); // GET STOP BUTTON
 var ctx = c.getContext("2d"); // YOUR CODE HERE
 
 //set fill color to team color
-ctx.fillStyle = "red"; // YOUR CODE HERE
+ctx.fillStyle = "red" // YOUR CODE HERE
 
 var requestID = 0; //init global var for use with animation frames
 
@@ -35,10 +35,10 @@ var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
-    if (requestID === 0) requestID = window.requestAnimationFrame(animateCircle);
+    if (requestID === 0) animateCircle();
 };
 
-var animateCircle = (timestamp) => {
+var animateCircle = () => {
     // YOUR CODE HERE
     clear()
     ctx.beginPath();
