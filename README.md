@@ -1,3 +1,2 @@
 # Workshop of Ari Schechter
-### Codemonky Extraordinaire
-
+### Code-monkey Extraordinaire
